@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     padding: .5rem 1rem;
     border-radius: 1rem;
@@ -17,11 +17,13 @@
     }
 
     .code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
         border-radius: 1rem;
         margin: 1rem 0;
         padding: .8rem;
         font-size: .9rem;
+
+        .language-javascript {
+            line-height: 1.5rem;
+        }
     }
 }
