@@ -1,0 +1,27 @@
+.code-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) -3rem -.5rem 3rem;
+
+    .description {
+        text-align: start;
+        font-weight: 200;
+        font-size: 1.1rem;
+        color: rgb(167, 178, 188);
+    }
+
+    .code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+        border-radius: 1rem;
+        margin: 1rem 0;
+        padding: .8rem;
+        font-size: .9rem;
+    }
+}
