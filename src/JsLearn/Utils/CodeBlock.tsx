@@ -4,8 +4,9 @@ import "./styles/CodeBlock.scss";
 import Prism from "prismjs";
 import "prismjs/components/prism-typescript";
 import "prismjs/themes/prism-okaidia.css";
+import { Example } from "./types/types";
 
-export const CodeBlock = ({ desc, code }: { desc: string; code: string }) => {
+export const CodeBlock = ({ desc, code }: Example) => {
   const [result, setResult] = useState("");
 
   useEffect(() => {
@@ -18,6 +19,8 @@ export const CodeBlock = ({ desc, code }: { desc: string; code: string }) => {
       setResult(`Error: ${error.message}`);
     }
   }, [code]);
+
+  if (code.length < 1) return undefined;
 
   return (
     <div className="code-block">

@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Objects } from "./JsLearn/ObjectsArrays/ObjectsArrays.tsx";
+import { Objects } from "./JsLearn/ObjectsArrays/Objects.tsx";
 
 function App() {
   return (
