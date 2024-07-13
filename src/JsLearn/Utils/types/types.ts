@@ -1,5 +1,5 @@
 
 export type Example = {
     desc: string;
-    code: string;
+    code: string | string[];
   };
